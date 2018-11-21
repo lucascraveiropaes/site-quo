@@ -1,0 +1,45 @@
+nav {
+	background-color: rgba(106, 103, 172, 0.4);
+}
+	nav ul {
+	    display: flex;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+	}
+
+.navbar-fixed {
+	position: fixed;
+}
+.sidenav-overlay {
+	z-index: 996;
+}
+.container,
+.container-fluid {
+	z-index: 2 !important;
+}
+.container-fluid {
+	width: 100%;
+}
+
+a.white {
+	color: #6A67AC;
+	font-weight: 600;
+}
+
+.btn-block {	
+	border-radius: 5px;
+	width: 60%
+}
+
+.btn-floating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img.circle {
+	object-fit: cover;
+}
