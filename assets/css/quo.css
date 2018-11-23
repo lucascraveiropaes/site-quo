@@ -95,11 +95,16 @@ section {
 #como-funciona .left-side {
 	width: 45%;
 	margin-left: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 #como-funciona .right-side {
 	width: 25%;
-	margin: 0px 5% -6% 10%;
+	margin-right: 5%;
+	margin-left: 10%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -107,7 +112,7 @@ section {
 
 #como-funciona .right-side img {
 	object-fit: cover;
-	width: 98%
+	width: 80%
 }
 
 input[type=email].background-input {
@@ -161,11 +166,6 @@ footer .inline-links {
 	.flex-row {
 		flex-direction: column;
 	}
-	#como-funciona .right-side,
-	#como-funciona .left-side {
-		margin: 0px;
-		width: 100%
-	}
 
 	footer {
 		flex-direction: column;
@@ -173,4 +173,19 @@ footer .inline-links {
 		footer .inline-links {
 			margin-top: 20px;
 		}
+}
+
+
+@media(max-width: 992px) {
+	#como-funciona .flex-row {
+		flex-direction: column;
+	}
+	#como-funciona .right-side,
+	#como-funciona .left-side {
+		margin: 0px;
+		width: 100%
+	}
+	#como-funciona .right-side img {
+		width: 300px;
+	}
 }
