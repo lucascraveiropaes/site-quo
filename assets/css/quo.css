@@ -3,6 +3,22 @@ p, h1, h2, h3, h4, h5, h6 { color: #FFF; font-family: 'Open Sans', sans-serif; }
 p {	font-size: 1.2em; }
 a {  font-family: 'Open Sans', sans-serif; }
 
+.logo-navbar {
+	position: absolute;
+	width: 40%;
+	margin: 0px 30%;
+	left: 0;
+	top: 0;
+	height: 60px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+	.logo-navbar img {
+		width: 60px;
+		object-fit: contain;
+	}
+
 section {
 	padding: 70px 20px 0px 20px;
 	background-color: #6A67AC;
@@ -133,6 +149,9 @@ footer .inline-links {
 
 
 @media(max-width: 600px) {
+	.logo-navbar {
+		display: flex;
+	}
 	section {
 		padding-top: 60px;
 	}
