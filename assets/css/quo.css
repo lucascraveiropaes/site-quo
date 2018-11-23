@@ -1,6 +1,7 @@
 html, body { overflow-x: hidden; }
-p, h1, h2, h3, h4, h5, h6 { color: #FFF; }
+p, h1, h2, h3, h4, h5, h6 { color: #FFF; font-family: 'Open Sans', sans-serif; }
 p {	font-size: 1.2em; }
+a {  font-family: 'Open Sans', sans-serif; }
 
 section {
 	padding: 70px 20px 0px 20px;
