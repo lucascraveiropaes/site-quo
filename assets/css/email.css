@@ -1,0 +1,170 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    background-image: url(../../assets/img/backgrounds/email.jpg); /* https://www.projetoquo.com/ */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.45);
+    right: 0;
+    bottom: 0;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    z-index: 9;
+    object-fit: contain;
+}
+
+.white-box {
+    width: 55vw;
+    height: 75vh;
+
+    z-index: 9;
+    background: #FFF;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+       -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px;
+    color: #000;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px;
+}
+
+a.button {
+    margin: 0px;
+    background: #524f93;
+    padding: 12px 22px;
+    border-radius: 6px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+       -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+}
+
+
+p.small {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    width: 55vw;
+}
+
+    .social a.social-item {
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 22px;
+        border-radius: 4px;
+        transition: background .3s ease-in-out;
+    }
+        .social a.social-item:hover {
+            background: rgba(255, 255, 255, .2);
+        }
+
+        .social a.social-item span {
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 0px;
+        }
+
+@media(max-width: 1200px) {
+    .white-box {
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+    }
+}
+
+@media(max-width: 620px) {
+    h1 {
+        text-align: center;
+        font-size: 22px;
+        color: #000;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    p, p.small {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    a.button {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .white-box {
+        width: 90%;
+        height: 90%;
+        margin: 5%;
+        overflow-y: scroll;
+    }
+}
