@@ -1,90 +1,79 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html style="-webkit-box-sizing: border-box;box-sizing: border-box;line-height: 1.5;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: 'Open Sans', sans-serif;font-weight: normal;color: rgba(0,0,0,0.87);width: 100vw;height: 100vh;padding: 0;margin: 0;overflow-x: hidden; width: 600px">
+	<head style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
 
-		<meta name="msapplication-tap-highlight" content="no">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+		<meta name="viewport" content="width=device-width, initial-scale=1" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
 
-        <meta name="description" content="Seja Bem Vindo!">
-        <meta name="author" content="Lucas Craveiro Paes">
-		<title>Projeto QUO</title>
+        <meta name="description" content="Seja Bem Vindo!" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+        <meta name="author" content="Lucas Craveiro Paes" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+		<title style="-webkit-box-sizing: inherit;box-sizing: inherit;">Projeto QUO</title>
 
 	    <!-- CSS -->
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	    <link rel="stylesheet" href="https://lucascraveiropaes.github.io/site-quo/assets/css/email.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+		<link rel="stylesheet" href="./assets/css/email.css" style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+	    <!-- <link rel="stylesheet" href="https://lucascraveiropaes.github.io/site-quo/assets/css/email.css"> -->
+
 	</head>
-	<body>
-		<section class="content">
-			<img src="https://www.projetoquo.com/assets/img/logo-branco.png" alt="logo" class="logo">
-			<div class="white-box">
-				<h1>Bem vindo, <span id="name"></span></h1>
-				<h4>Agradecemos por se cadastrar no aplicativo QUO!</h4>
-				<p id="no-phone">Como medida de segurança, pedimos que verifique se esse é o email correto para a sua conta no aplicativo QUO.</p>
-				<p id="has-phone">Como medida de segurança, pedimos que verifique se esse é o email correto para a sua conta no aplicativo QUO vinculada ao número de telefone <b id="phone"></b></p>
+	<body style="-webkit-box-sizing: inherit;box-sizing: inherit;margin: 0;padding: 0;font-family: 'Open Sans', sans-serif; width: 100%">
+		<div class="content" style="-webkit-box-sizing: inherit;box-sizing: inherit;background-image: url(https://lucascraveiropaes.github.io/site-quo/assets/img/backgrounds/email.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;padding: 20px 0px; width: fit-content">
+			<table class="table" style="-webkit-box-sizing: inherit;box-sizing: inherit;border: none !important;width: 100% !important;display: table;border-collapse: collapse;border-spacing: 0;z-index: 9 !important;">
+				<tr style="-webkit-box-sizing: inherit;box-sizing: inherit;border-bottom: 1px solid rgba(0,0,0,0.12);padding: 0;border: none !important;">
+					<th style="-webkit-box-sizing: inherit;box-sizing: inherit;border: none;padding: 0;display: table-cell;text-align: center;vertical-align: middle;border-radius: 2px;">
+						<img src="https://www.projetoquo.com/assets/img/logo-branco.png" alt="logo" class="logo" style="-webkit-box-sizing: inherit;box-sizing: inherit;border-style: none;width: 80px;height: 80px;z-index: 9;object-fit: contain;margin-bottom: -30px;">
+					</th>
+				</tr>
+				<tr style="-webkit-box-sizing: inherit;box-sizing: inherit;border-bottom: 1px solid rgba(0,0,0,0.12);padding: 0;border: none !important;">
+					<th style="-webkit-box-sizing: inherit;box-sizing: inherit;border: none;padding: 0;display: table-cell;text-align: center;vertical-align: middle;border-radius: 2px;">
+						<div class="white-box" style="-webkit-box-sizing: inherit;box-sizing: inherit;width: fit-content;height: 90%;z-index: 9;background: #FFF;padding: 30px;border-radius: 12px;align-items: center;-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);-moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);margin: 0px 5%;">
+							<h1 style="-webkit-box-sizing: inherit;box-sizing: inherit;font-size: 30px;margin: 0px;line-height: 1.3;font-weight: 500;color: #000;font-family: 'Great Vibes', cursive;">Bem vindo, <?= $user->getName() ?></h1>
+							<h4 style="-webkit-box-sizing: inherit;box-sizing: inherit;font-weight: 600;line-height: 110%;font-size: 16px;margin: 20px 0px;text-align: center;color: #000;">Agradecemos por se cadastrar no aplicativo QUO!</h4>
 
-				<a class="button" href="#" target="_blank">Confirmar Email</a>
+                            <p style="-webkit-box-sizing: inherit;box-sizing: inherit;font-size: 14px;font-weight: 400;line-height: 24px;text-align: center;margin: 40px 0px;">
+                                <?php if ($user->getPhone() !== null): ?>
+                                    Como medida de segurança, pedimos que verifique se esse é o email correto para a sua conta no aplicativo QUO vinculada ao número de telefone <b style="-webkit-box-sizing: inherit;box-sizing: inherit;font-weight: bolder;"><?= $user->getPhone() ?></b>
+                                <?php else: ?>
+                                    Como medida de segurança, pedimos que verifique se esse é o email correto para a sua conta no aplicativo QUO.
+                                <?php endif; ?>
+                            </p>
 
-				<div>
-					<p class="small">Confirmar seu email ajuda a proteger suas informações pessoais e garantir que você possa acessar sua se o seu número de telefone mudar no futuro.</p>
-					<p class="small">Se você não reconhece essa conta, ignore esse email.</p>
-				</div>
-			</div>
-			<div class="social">
-				<a href="https://www.facebook.com/aplicativoquo/" class="social-item" target="_blank">
-					<span>@aplicativoquo</span>
-					<i class="fab fa-facebook-square"></i>
-				</a>
+							<a class="button" href="<?= $activate_link ?>" target="_blank" style="-webkit-box-sizing: inherit;box-sizing: inherit;background-color: transparent;-webkit-text-decoration-skip: objects;color: #FFF;text-decoration: none;-webkit-tap-highlight-color: transparent;margin: 30px 0px;background: #3e3a90;padding: 15px 22px;border-radius: 4px;font-size: 16px;font-weight: 500;text-transform: uppercase;letter-spacing: 2px;-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);-moz-box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);width: 100%;text-align: center;">Confirmar Email</a>
 
-				<a href="https://www.instagram.com/aplicativoquo/" class="social-item" target="_blank">
-					<span>@aplicativoquo</span>
-					<i class="fab fa-instagram"></i>
-				</a>
+							<div style="-webkit-box-sizing: inherit;box-sizing: inherit;">
+								<p class="small" style="-webkit-box-sizing: inherit;box-sizing: inherit;font-size: 14px;font-weight: 400;line-height: 24px;text-align: center;margin: 45px 0px 25px;">Confirmar seu email ajuda a proteger suas informações pessoais e garantir que você possa acessar sua se o seu número de telefone mudar no futuro.</p>
+								<p class="small no-margin" style="-webkit-box-sizing: inherit;box-sizing: inherit;font-size: 14px;font-weight: 400;line-height: 24px;text-align: center;margin: 0 !important;">Se você não reconhece essa conta, ignore esse email.</p>
+							</div>
+						</div>
+					</th>
+				</tr>
+				<tr style="-webkit-box-sizing: inherit;box-sizing: inherit;border-bottom: 1px solid rgba(0,0,0,0.12);padding: 0;border: none !important;">
+					<th style="-webkit-box-sizing: inherit;box-sizing: inherit;border: none;padding: 0;display: table-cell;text-align: center;vertical-align: middle;border-radius: 2px;">
+						<div class="social" style="-webkit-box-sizing: inherit;box-sizing: inherit;margin-top: 15px;width: 100%;z-index: 9;">
+							<a href="https://www.facebook.com/aplicativoquo/" class="social-item" target="_blank" style="-webkit-box-sizing: inherit;box-sizing: inherit;background-color: transparent;-webkit-text-decoration-skip: objects;color: #FFF;text-decoration: none;-webkit-tap-highlight-color: transparent;text-align: center;display: inline-block;padding: 15px 22px;border-radius: 4px;transition: background .3s ease-in-out;">
+								<span style="-webkit-box-sizing: inherit;box-sizing: inherit;margin-right: 10px;font-size: 14px;line-height: 0px;">@aplicativoquo</span>
+								<i class="fab fa-facebook-square" style="-webkit-box-sizing: inherit;box-sizing: inherit;line-height: 1;-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;font-family: &quot;Font Awesome 5 Brands&quot;;"></i>
+							</a>
 
-				<a href="mailto:aplicativo.quo@gmail.com" class="social-item" target="_blank">
-					<span>aplicativo.quo@gmail.com</span>
-					<i class="fas fa-envelope"></i>
-				</a>
-			</div>
-			<div class="overlay"></div>
-		</section>
+							<a href="https://www.instagram.com/aplicativoquo/" class="social-item" target="_blank" style="-webkit-box-sizing: inherit;box-sizing: inherit;background-color: transparent;-webkit-text-decoration-skip: objects;color: #FFF;text-decoration: none;-webkit-tap-highlight-color: transparent;text-align: center;display: inline-block;padding: 15px 22px;border-radius: 4px;transition: background .3s ease-in-out;">
+								<span style="-webkit-box-sizing: inherit;box-sizing: inherit;margin-right: 10px;font-size: 14px;line-height: 0px;">@aplicativoquo</span>
+								<i class="fab fa-instagram" style="-webkit-box-sizing: inherit;box-sizing: inherit;line-height: 1;-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;font-family: &quot;Font Awesome 5 Brands&quot;;"></i>
+							</a>
+
+							<a href="mailto:aplicativo.quo@gmail.com" class="social-item" target="_blank" style="-webkit-box-sizing: inherit;box-sizing: inherit;background-color: transparent;-webkit-text-decoration-skip: objects;color: #FFF;text-decoration: none;-webkit-tap-highlight-color: transparent;text-align: center;display: inline-block;padding: 15px 22px;border-radius: 4px;transition: background .3s ease-in-out;">
+								<span style="-webkit-box-sizing: inherit;box-sizing: inherit;margin-right: 10px;font-size: 14px;line-height: 0px;">aplicativo.quo@gmail.com</span>
+								<i class="fas fa-envelope" style="-webkit-box-sizing: inherit;box-sizing: inherit;line-height: 1;-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;font-family: &quot;Font Awesome 5 Free&quot;;font-weight: 900;"></i>
+							</a>
+						</div>
+					</th>
+				</tr>
+			</table>
+
+			<div class="overlay" style="-webkit-box-sizing: inherit;box-sizing: inherit;position: absolute;top: 0;left: 0;background: rgba(0,0,0,.45);right: 0;bottom: 0;"></div>
+		</div>
 	</body>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<script>
-		$( document ).ready(function() {
-			console.log(document.location);
-			let params = (new URL(document.location)).searchParams;
-			let phone = params.get("phone");
-			let token = params.get("token");
-			let name = params.get("name");
-
-			if (name === null || token === null) {
-				window.location.href = "/";
-				return;
-			}
-
-			$("#name").html(name);
-			$(".button").attr("href", "http://localhost:7575/user/activate-user?token=" + token);
-
-			$("#no-phone").show();
-			$("#has-phone").hide();
-
-			if (phone !== null) {
-				$("#no-phone").hide();
-				$("#has-phone").show();
-				$("#phone").html(phone);
-			}
-		});
-	</script>
-
-	<style media="screen">
-		.no-phone, .has-phone {
-			display: none;
-		}
-	</style>
 </html>

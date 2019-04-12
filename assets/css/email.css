@@ -7,6 +7,21 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+table {
+    width: 100% !important;
+    z-index: 9 !important;
+    border: none !important;
+}
+    th {
+        text-align: center;
+        padding: 0;
+    }
+
+    tr {
+        border: none !important;
+        padding: 0;
+    }
+
 .content {
     background-image: url(https://lucascraveiropaes.github.io/site-quo/assets/img/backgrounds/email.jpg);
     background-position: center;
@@ -37,16 +52,13 @@ html, body {
 }
 
 .white-box {
+    margin-left: calc(55vw - (65vw /2));
     width: 55vw;
-    height: 75vh;
-
+    height: 100%;
     z-index: 9;
     background: #FFF;
     padding: 30px;
     border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
        -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -64,7 +76,7 @@ h4 {
     font-size: 20px;
     font-weight: 500;
     text-align: center;
-    margin: 0px;
+    margin: 30px 0px;
 }
 
 p {
@@ -72,11 +84,11 @@ p {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
-    margin: 0px;
+    margin: 40px 0px;
 }
 
 a.button {
-    margin: 0px;
+    margin: 30px 0px;
     background: #524f93;
     padding: 12px 22px;
     border-radius: 6px;
@@ -94,23 +106,23 @@ a.button {
 p.small {
     font-size: 16px;
     line-height: 26px;
+    margin: 45px 0px 25px;
+}
+
+.no-margin {
+    margin: 0 !important;
 }
 
 .social {
-    display: flex;
-    flex: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 40px;
+    width: 100%;
     z-index: 9;
-    width: 55vw;
 }
 
     .social a.social-item {
+        text-align: center;
+        display: inline-block;
         color: #FFF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 15px 22px;
         border-radius: 4px;
         transition: background .3s ease-in-out;
@@ -125,13 +137,6 @@ p.small {
             line-height: 0px;
         }
 
-@media(max-width: 1200px) {
-    .white-box {
-        width: 80%;
-        height: 80%;
-        margin: 10%;
-    }
-}
 
 @media(max-width: 620px) {
     h1 {
